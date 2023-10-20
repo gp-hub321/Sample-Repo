@@ -1,0 +1,11 @@
+name: sample_first_workflow
+on: [push, pull_request]
+
+jobs:
+  First_Workflow_test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Test_workflow
+      run: |
+        echo "Hello World"
+        ls -l
